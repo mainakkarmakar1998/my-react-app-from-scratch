@@ -31,7 +31,7 @@ const result = (state=initialState,action) =>{
 			let result = Function("return " + userInput)();
 							state=result;
 							return state;
-        					//return eval(state);
+        					
         					}
        					 catch{
            					 state= "Wrong input";
