@@ -13,10 +13,20 @@ mode: 'development',
      loader: "babel-loader"
    }
  },
+
+
   {
-   test: /\.css$/,
-   use: ["style-loader", "css-loader"]
+    test: /\.s?css$/,
+    use: ['style-loader', 'css-loader', 'sass-loader']   
   }
 ]},
+devServer: {
+  historyApiFallback: true,
+},
+output: {
+ 
+ 
+  publicPath: '/'
+},
  plugins: [htmlPlugin]
 };
